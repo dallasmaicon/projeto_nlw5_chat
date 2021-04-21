@@ -1,1 +1,1 @@
-# projeto_nlw5_chat
+# Evento NLW 05 Trilha NodeJS
