@@ -3,7 +3,7 @@ import { User } from "../entities/User";
 import { UserRepository } from "../repositories/UsersRepository";
 
 
-class UserService {
+class UsersService {
     private userRepository: Repository<User>;
 
     constructor() {
@@ -27,6 +27,12 @@ class UserService {
 
         return user;
     }
+
+    async findByEmail(email: string) {
+        return await this.userRepository.findOne({
+            email
+        });
+    }
 }
 
-export { UserService };
+export { UsersService };

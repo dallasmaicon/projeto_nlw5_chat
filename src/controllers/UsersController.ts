@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
-import { UserService } from "../services/UsersService";
+import { UsersService } from "../services/UsersService";
 
 
 class UserController {
     async create(request: Request, response: Response): Promise<Response> {
         const { email } = request.body;
 
-        const userService = new UserService();
+        const userService = new UsersService();
 
         try {
             const user = await userService.create(email);
