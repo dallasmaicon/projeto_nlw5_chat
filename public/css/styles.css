@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background: #ffffff;
+  background: #fbfbfb;
 }
 
 .btn_support {
@@ -131,9 +131,24 @@ body {
   /* border-bottom: 0px; */
 }
 
+#list_users{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .admin {
   display: flex;
   flex-direction: column;
+  background-color: red;
+  border: 1px solid #ededed;
+  margin: 5px 10px;
+  flex-basis: calc(50% - 20px);
+  min-width: 25%;
+}
+
+.email {
+  width: 100%;
+  height: 50px;
 }
 
 .admin .message {
@@ -263,15 +278,6 @@ input[type="text"]:focus {
   opacity: 0.9;
 }
 
-.admin {
-  border: 1px solid #ededed;
-  margin-top: 5px;
-}
-
-.email {
-  float: left;
-  width: 350px;
-}
 
 .admin_send_message {
   display: flex;
