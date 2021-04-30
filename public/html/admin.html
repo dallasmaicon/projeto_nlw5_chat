@@ -15,9 +15,10 @@
   <div id="list_users"></div>
 
   <script id="template" type="x-tmpl-mustache">
-      <div id="user{{id}}" class="admin">
-          <span class="email">Email: {{email}}</span>
-          <button class="btn_atd" onclick="call('{{id}}')">Entrar em atendimento</button>
+      <div id="user{{id}}" class="box-client-duvida">
+          <img src="../images/user.png" title="" alt="" />
+          <span class="email">{{email}}</span>
+          <button class="btn_atd" onclick="call('{{id}}')">Responder</button>
       </div>
     </script>
 
